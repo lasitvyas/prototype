@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prototype.css">
+
+    <title>Sciqus Prototype</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/5fb0d94116.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            background-color: darkgrey;
+            width: 100%;
+        }
+
+            .navbar ul {
+                overflow: auto;
+                margin-left: 70px;
+                font-weight: 400;
+            }
+
+            .navbar li {
+                float: left;
+                list-style: none;
+                margin: 15px 20px;
+            }
+
+                .navbar li a {
+                    padding: 3px 3px;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                    .navbar li a:hover {
+                        background-color: orange;
+                    }
+
+                    .navbar li a:active {
+                        background-color: orange;
+                        color: white;
+                    }
+
+        .logo-text {
+            float: right;
+            color: white;
+            padding-right: 80px;
+            margin: 7px;
+            margin-right: 120px;
+        }
+
+        .logo-image {
+            float: left;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 5px;
+            margin-left: 200px;
+            max-width: 40px;
+            max-height: 40px;
+        }
+
+        .logo {
+            width: 50%;
+        }
+
+        span.a {
+            display: block;
+            height: 40px;
+            padding: 1px 9px;
+            border: 0.2px solid black;
+            background-color: white;
+            color: black;
+            font-size: 13px;
+            font-weight: 100;
+        }
+
+        span.b {
+            font-weight: 100;
+            color: darkgray;
+            font-style: oblique;
+            font-size: 15px;
+        }
+
+        input [type=text] {
+            border: 1px solid grey;
+        }
+
+        placeholder {
+            color: grey;
+            padding: 4px;
+        }
+
+        .button {
+            padding: 5px 15px;
+            font-size: 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: white;
+            background-color: darkorange;
+            border: none;
+            border-radius: 50px;
+        }
+
+            .button:hover {
+                background-color: orangered;
+            }
+
+        input {
+            height: 25px;
+            width: 150px;
+        }
+
+        section.B {
+            padding: 4px;
+        }
+
+        section.A {
+            padding-bottom: 4px;
+        }
+
+        section.C {
+            padding-bottom: 5px;
+        }
+
+        buttom {
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"> HOME </a></li>
+                <li><a href="#"> SITES </a></li>
+                <li><a href="#"> SOCIAL </a></li>
+                <li><a href="#"> PEOPLE </a></li>
+                <li><a href="#"> STORIES </a></li>
+                <li><a href="#"> DOCUMENTS </a></li>
+                <div class="logo-image">
+                    <div class="logo">
+                        <a href="#"> <img src="small-logo.jpg"></a>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    Shalini P <br />
+                    Team Lead
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="office-image">
+        <img src="office.jpg" alt="Office" class="center">
+        <div class="bottom-left">The Workplace where fun and joy fuels the productivity</div>
+    </div>
+
+    <section class="container">
+        <div class="left-half">
+            <h2><span class="c"> New Starters </span></h2>
+
+
+
+            <html>
+            <head>
+                <title>Sciqus Prototype</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            </head>
+            <body>
+
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="card">
+                                    <div class="image-data">
+                                        <div class="background-image"> </div>
+
+                                    </div>
+                                    <div class="card1-data">
+                                        <h1 class="title"> Welcome on Board </h1>
+                                        <h2 class="subtitle"> Tina M joined as a Marketing Head. </h2>
+
+                                        <p class="description1">
+                                            <span class="a"> <span class="b">  Ayesha T </span> <br /> Welcome Tina:) </span>
+                                            <span class="a"> <span class="b"> William J </span> <br />  Welcome Tina:) </span>
+
+                                        </p>
+                                        <section class="A">
+                                            <form>
+                                                <input type="text" id="cmt" name="comment" placeholder="Type your comment" />
+                                                <button class="button">Post</button>
+                                            </form>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="card">
+                                    <div class="image-data">
+                                        <div class="background-image3"> </div>
+
+                                    </div>
+                                    <div class="card1-data">
+                                        <h1 class="title"> Welcome on Board </h1>
+                                        <h2 class="subtitle"> Tina M joined as a Marketing Head. </h2>
+
+                                        <p class="description1">
+                                            <span class="a"> <span class="b">  Ayesha T </span> <br /> Welcome Tina:) </span>
+                                            <span class="a"> <span class="b"> William J </span> <br />  Welcome Tina:) </span>
+
+                                        </p>
+                                        <section class="A">
+                                            <form>
+                                                <input type="text" id="cmt" name="comment" placeholder="Type your comment" />
+                                                <button class="button">Post</button>
+                                            </form>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </body>
+        </html>
+
+
+    </div>
+    <div class="right-half">
+        <h2><span class="c"> Company News </span></h2>
+
+
+
+        <html>
+        <head>
+            <title>Sciqus Prototype</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+
+            <div class="container">
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="card2">
+                                <div class="image-data2">
+                                    <div class="background-image2"> </div>
+                                </div>
+                                <div class="card2-data">
+                                    <div class="heading">
+                                        <h2 class="title2"> Congratulate our team on Achieving great success </h2>
+                                    </div>
+                                    <div class="description2">
+                                        Today, modern offices are organized on scientific principles and their management and administration are in the hands of specialized office manager. Managers do not share the same room with clerks but sit in separate rooms.
+                                    </div>
+                                    <div>
+                                        <section class="B">
+                                            <i class="fa fa-solid fa-heart"></i>
+                                            <i class="fa fa-solid fa-thumbs-up"></i>
+
+                                        </section>
+                                        <section class="C">
+                                            <form>
+                                                <input type="text" id="cmt" name="comment" placeholder="Type your comment" />
+                                                <button class="button">Post</button>
+                                            </form>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <div class="card2">
+                                <div class="image-data2">
+                                    <div class="background-image"> </div>
+                                </div>
+                                <div class="card2-data">
+                                    <div class="heading">
+                                        <h2 class="title2"> Congratulate our team on Achieving great success </h2>
+                                    </div>
+                                    <div class="description2">
+                                        Today, modern offices are organized on scientific principles and their management and administration are in the hands of specialized office manager. Managers do not share the same room with clerks but sit in separate rooms.
+                                    </div>
+                                    <div>
+                                        <section class="B">
+                                            <i class="fa fa-solid fa-heart"></i>
+                                            <i class="fa fa-solid fa-thumbs-up"></i>
+
+                                        </section>
+                                        <section class="C">
+                                            <form>
+                                                <input type="text" id="cmt" name="comment" placeholder="Type your comment" />
+                                                <button class="button">Post</button>
+                                            </form>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </body>
+    </html>
+
+</div>
+</section>
+<section class="container">
+
+    <div class="part1">
+        <h2><span class="c"> Documents </span></h2>
+
+    </div>
+
+
+    <div class="part2">
+        <h2><span class="c"> E-mails </span></h2>
+    </div>
+
+
+    <div class="part3">
+        <h2><span class="c"> My Tasks </span></h2>
+    </div>
+</section>
+</body>
+
+</html>

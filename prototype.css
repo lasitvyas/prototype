@@ -1,0 +1,192 @@
+html {
+    font-family: Arial !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.office-image {
+    padding-top: 10px;
+    position: relative;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 50px;
+    left: 170px;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+span.c {
+    background-color: darkorange;
+    color: white;
+    padding: 7px;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+.right-half {
+    flex: 1;
+    width: 50%
+}
+
+.left-half {
+    flex: 1;
+    width: 50%
+}
+
+.card, .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 15px;
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+}
+
+    .card:hover, .card2:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.image-data, .image-data2 {
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.background-image {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    background: url("team1.jpg") center no-repeat;
+    background-size: cover;
+    padding: 5px;
+    margin: 2px;
+}
+
+.background-image2 {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    background: url("team2.jpg") center no-repeat;
+    background-size: cover;
+    padding: 5px;
+    margin: 2px;
+}
+
+.background-image3 {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    background: url("team3.jpg") center no-repeat;
+    background-size: cover;
+    padding: 5px;
+    margin: 2px;
+}
+
+.card1-data, .card2-data {
+    position: relative;
+    margin-left: -40px;
+    margin-right: 12px;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+    margin: 1px 0px 2px 1px;
+    font-weight: 100;
+}
+
+.title2 {
+    font-size: 18px;
+    color: white;
+    margin: 2px 0px 6px 1px;
+    font-weight: 100;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: white;
+    margin: 0rem 0rem 0rem 0rem;
+    font-weight: 100;
+}
+
+.description1 {
+    position: relative;
+    background-color: white;
+    color: black;
+    margin-top: 6px;
+}
+
+.description2 {
+    position: relative;
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+@media screen and (min-width: 300px) {
+    .card {
+        flex-direction: row;
+        max-height: 600px;
+    }
+
+    .image-data {
+        flex-basis: 60%;
+        height: unset;
+    }
+
+    .card1-data {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .card2 {
+        flex-direction: row;
+        max-height: 800px;
+    }
+
+    .image-data2 {
+        flex-basis: 60%;
+        height: unset;
+    }
+
+    .card2-data {
+        flex-basis: 70%;
+    }
+}
+
+
+
+.part1 {
+    flex: 1;
+    width: 50%
+}
+
+.part2 {
+    flex: 1;
+    width: 50%
+}
+
+.part3 {
+    flex: 0;
+    width: 50%
+}
