@@ -1,5 +1,5 @@
 html {
-    font-family: Arial !important;
+    font-family: Arial;
 }
 
 .center {
@@ -10,7 +10,7 @@ html {
 }
 
 .office-image {
-    padding-top: 10px;
+    
     position: relative;
     color: white;
 }
@@ -31,10 +31,12 @@ span.c {
     background-color: darkorange;
     color: white;
     padding: 7px;
+    font-size: 23px;
 }
 
 h2 {
     margin-left: 30px;
+    margin-top:3px;
 }
 
 .right-half {
@@ -55,7 +57,8 @@ h2 {
     display: flex;
     flex-direction: column;
     height: 300px;
-    width: 400px;
+    width: 500px;
+    border-radius: 10px;
 }
 
     .card:hover, .card2:hover {
@@ -69,7 +72,7 @@ h2 {
 }
 
 .background-image {
-    width: 70%;
+    width: 80%;
     height: 90%;
     position: absolute;
     background: url("team1.jpg") center no-repeat;
@@ -79,7 +82,7 @@ h2 {
 }
 
 .background-image2 {
-    width: 70%;
+    width: 80%;
     height: 90%;
     position: absolute;
     background: url("team2.jpg") center no-repeat;
@@ -89,7 +92,7 @@ h2 {
 }
 
 .background-image3 {
-    width: 70%;
+    width: 80%;
     height: 90%;
     position: absolute;
     background: url("team3.jpg") center no-repeat;
@@ -100,14 +103,14 @@ h2 {
 
 .card1-data, .card2-data {
     position: relative;
-    margin-left: -40px;
-    margin-right: 12px;
+    margin-left: -20px;
+    margin-right: 40px;
 }
 
 .title {
     font-size: 20px;
     color: white;
-    margin: 1px 0px 2px 1px;
+    margin: 3px 0px 6px 0px;
     font-weight: 100;
 }
 
@@ -136,7 +139,7 @@ h2 {
     position: relative;
     color: white;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 13px;
     padding-top: 7px;
     padding-left: 10px;
     padding-bottom: 4px;
@@ -174,8 +177,6 @@ h2 {
     }
 }
 
-
-
 .part1 {
     flex: 1;
     width: 50%
@@ -190,3 +191,4 @@ h2 {
     flex: 0;
     width: 50%
 }
+
