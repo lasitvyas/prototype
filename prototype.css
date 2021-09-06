@@ -10,7 +10,6 @@ html {
 }
 
 .office-image {
-    
     position: relative;
     color: white;
 }
@@ -18,7 +17,7 @@ html {
 .bottom-left {
     position: absolute;
     bottom: 50px;
-    left: 170px;
+    left: 50px;
     font-family: Arial;
     font-size: 25px;
 }
@@ -28,10 +27,13 @@ html {
 }
 
 span.c {
-    background-color: darkorange;
-    color: white;
-    padding: 7px;
-    font-size: 23px;
+    color: darkblue;
+    background-color: white;
+    border-bottom: 4px solid #f72c83;
+    font-size: 21px;
+    border-bottom-style: solid;
+    padding: 0px;
+    padding-bottom: 1px;
 }
 
 h2 {
@@ -53,7 +55,7 @@ h2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     padding: 15px;
-    background-color: dimgray;
+    background-color: #152363;
     display: flex;
     flex-direction: column;
     height: 300px;
