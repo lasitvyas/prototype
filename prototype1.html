@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Sciqus Prototype</title>
-    <link rel="stylesheet" href="prototype.css">
+    <link rel="stylesheet" href="prototype.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/5fb0d94116.js" crossorigin="anonymous"></script>
     <style>
         .navbar {
-            background-color: darkgrey;
+            background-color: #3954c7;
             width: 100%;
         }
 
@@ -34,12 +34,13 @@
                 }
 
                     .navbar li a:hover {
-                        background-color: orange;
+                        color: white;
+                        border-bottom: 4px solid #ff675a;
                     }
 
-                    .navbar li a:active {
-                        background-color: orange;
+                    .navbar li a.active {
                         color: white;
+                        border-bottom: 4px solid #ff675a;
                     }
 
         .logo-text {
@@ -72,11 +73,13 @@
         }
 
         span.c {
-            background-color: darkorange;
-            color: white;
-            font-size: 23px;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            color: darkblue;
+            font-size: 21px;
+            background-color: white;
+            border-bottom: 4px solid #f72c83;
+            border-bottom-style: solid;
+            padding: 0px;
+            padding-bottom: 1px;
         }
 
         input [type=text] {
@@ -95,13 +98,13 @@
             cursor: pointer;
             outline: none;
             color: white;
-            background-color: darkorange;
+            background-color: #143296;
             border: none;
             border-radius: 50px;
         }
 
             .button:hover {
-                background-color: orangered;
+                background-color: darkblue;
             }
 
         input {
@@ -112,6 +115,7 @@
         section.B {
             padding: 4px;
             padding-left: 2px;
+            color: white;
         }
 
         section.A {
@@ -122,19 +126,53 @@
             padding-bottom: 5px;
             padding-top: 1px;
             padding-left: 2px;
+            background-color: white;
+            border-radius: 5px;
         }
 
         .carousel {
             position: relative;
             margin-left: 15px;
         }
+
+        .left_part {
+            width: 76%;
+        }
+
+        .right_part {
+            margin-right: 40px;
+            width: 24%;
+        }
+
+        .tab1 {
+            background-color: #041a61;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .tab2, .tab3, .tab4 {
+            background-color: white;
+            color: #081075;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: initial;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: white;
+                text-decoration: none;
+            }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#"> HOME </a></li>
+                <li><a href="#" class="active"> HOME </a></li>
                 <li><a href="#"> SITES </a></li>
                 <li><a href="#"> SOCIAL </a></li>
                 <li><a href="#"> PEOPLE </a></li>
@@ -152,12 +190,24 @@
             </ul>
         </nav>
     </header>
+    <section class="container">
 
-    <div class="office-image">
-        <img src="office.jpg" alt="Office" class="center">
-        <div class="bottom-left">The Workplace where fun and joy fuels the productivity</div>
-    </div>
+        <div class="left_part">
+            <div class="office-image">
+                <img src="office.jpg" alt="Office" style="width: 94%; height: 320px; margin-left: 30px;">
+                <div class="bottom-left">The Workplace where fun and joy fuels the productivity</div>
+            </div>
+        </div>
 
+        <div class="right_part">
+            <section class="tab1" style="height:130px;"> </section>
+            <a href="https://sciqus.com/">
+                <section class="tab2" style="margin-top: 8px; height: 55px; padding: 15px; border: solid 2px #f74288;"> Our Mission </section>
+                <section class="tab3" style="margin-top: 8px; height: 55px; padding: 15px; border: solid 2px #0429ca"> Our Vision </section>
+                <section class="tab4" style="margin-top: 8px; height: 55px; padding: 15px; border: solid 2px #ff4200"> Our Values </section>
+            </a>
+        </div>
+    </section>
     <section class="container">
         <div class="left-half">
             <h2><span class="c"> New Starters </span></h2>
@@ -167,6 +217,7 @@
                 <title>Sciqus Prototype</title>
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
+
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -271,6 +322,7 @@
             <title>Sciqus Prototype</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
